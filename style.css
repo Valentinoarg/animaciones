@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuadrado {
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    transition: all 2s;
+}
+
+.circulo {
+    background: yellow;
+    width: 400px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 50%;
+    animation: circulo 2s infinite;
+
+}
+
+.cuadrado:hover {
+    transform: rotate(45deg) translate(100px);
+    background: #FF7E6A;
+    border-radius: 50%;
+}
+
+@keyframes circulo {
+    0% {
+
+    }
+
+    50% {
+        transform: translate(100,50px);
+    }
+
+    70%{
+        transform: translate(200px) rotate(360deg);
+    }
+    
+    100%{
+        transform: rotate(100px);
+    }
+}
